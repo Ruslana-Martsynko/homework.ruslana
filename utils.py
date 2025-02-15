@@ -3,6 +3,7 @@ def factorial(n):
         return 1
     return n * factorial(n - 1)
 
+
     def is_prime(n):
     if n < 2:
         return False
@@ -10,3 +11,10 @@ def factorial(n):
         if n % i == 0:
             return False
     return True
+
+    
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+
